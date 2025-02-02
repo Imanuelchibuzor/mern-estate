@@ -17,6 +17,7 @@ export default function SignUp() {
     try {
       setLoading(true);
 
+      // A proxy is set up in vite.config.js to forward requests to the server
       const res = await fetch("/api/auth/sign-up", {
         method: "POST",
         headers: {
